@@ -1,0 +1,16 @@
+.admin{
+    display: flex;
+    margin: 0;
+    font-family: "Poppins";
+    background-color: #f6f6f6;
+    height: 110vh;
+   
+}
+.popup{
+    background: #9f4c4c;
+}
+@media(max-width:800px){
+    .admin{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,44 @@
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Define the circular path for the text -->
+    <path id="circlePath" d="M 150,150 m -120,0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0" />
+    
+    <!-- Define a gradient for the text color -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4081;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffab40;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <style>
+    .text {
+      font-family: 'Montserrat', sans-serif; /* Modern, stylish font */
+      font-size: 20px;
+      fill: url(#textGradient); /* Gradient fill for text */
+      letter-spacing: 0.5px; /* Adjusted letter spacing */
+      text-shadow: 0 0 3px rgba(0,0,0,0.5); /* Enhanced text shadow */
+      text-anchor: middle; /* Center-align text along the path */
+      dominant-baseline: middle; /* Center text vertically */
+    }
+    .logo {
+      font-family: 'Montserrat', sans-serif; /* Same modern font */
+      font-size: 100px; /* Larger font size for logo */
+      fill: url(#textGradient); /* Gradient fill for logo */
+      text-shadow: 0 0 5px rgba(0,0,0,0.5); /* Enhanced shadow for logo */
+    }
+  </style>
+  
+  <!-- Place the text along the circular path -->
+  <text>
+    <textPath href="#circlePath" class="text" startOffset="50%" textLength="610">
+      Shop Easy Discover what you love 
+    </textPath>
+  </text>
+  
+  <!-- Place the logo letters inside the circle -->
+  <text x="122" y="140"  class="logo" text-anchor="middle" dominant-baseline="middle">
+    S
+  </text>
+  <text x="150" y="180" class="logo" text-anchor="middle" dominant-baseline="middle">
+    E
+  </text>
+</svg>

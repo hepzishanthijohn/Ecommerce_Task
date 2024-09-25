@@ -1,0 +1,195 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Adjusted to space between logo and search/cart */
+    align-items: center; /* Center items vertically */
+    height: 100px;
+    padding: 5px 20px; /* Added some horizontal padding */
+    background: white;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-login-cart img {
+    width: 30px;
+}
+
+.nav-login-cart button {
+    width: 140px;
+    height: 48px;
+    outline: none;
+    border: 2px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background-color: #f3f3f3;
+}
+
+#logo-sp {
+    border: 2px solid orangered;
+    height: 65px;
+    width: 65px;
+    border-radius: 35px;
+    background: orangered;
+}
+
+.nav-cart-count {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -28px;
+    margin-left: -32px;
+    border-radius: 11px;
+    font-size: 11px;
+    background: red;
+    color: white;
+}
+
+.nav-dropdown {
+    display: none;
+}
+
+@media(max-width:1280px) {
+    .navbar {
+        padding: 12px 50px;  
+    }
+    .nav-logo img {
+        width: 40px;
+    }
+    .nav-logo p {
+        font-size: 23px;
+    }
+    .nav-search input {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1024px) {
+    .navbar {
+        padding: 12px 30px;
+    }
+    .nav-search input {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:800px) {
+    .navbar {
+        padding: 7px 0px;
+    }
+    #shop-name{
+        display: none;
+    }
+    .nav-dropdown {
+        display: block;
+        margin-top: 10px;
+        height: 38px;
+        width: 38px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width:500px) {
+    .navbar {
+        padding: 5px; /* Adjust padding for small screens */
+    }
+    .nav-logo {
+        font-size: 30px;
+    }
+    #shop-name{
+        display: none;
+    }
+    
+    .nav-search input {
+        width: 100px; /* Adjust width for small screens */
+      
+    }
+    .nav-dropdown {
+        width: 35px;
+        height: 35px;
+    }
+    
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  .nav-search {
+    width: 50%;
+  }
+ 
+  form.nav-search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.nav-search button {
+    float: left;
+    width:10%;
+    padding: 10px;
+    background: grey;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.nav-search button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.nav-search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
