@@ -157,7 +157,6 @@ const CategoryNav = () => {
 
 
 
-                <li><Link to="/"></Link></li>
                
                 <li><Link to="/men">Men</Link></li>
                 <li><Link to="/women">Women</Link></li>
